@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'THSarabunNewBold';
+        src: url('./THSarabunNew Bold001.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+      }
+
+@font-face {
+    font-family: 'THSarabunNewBoldItalic';
+        src: url('./THSarabunNewBoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+      }
+
+@font-face {
+    font-family: 'THSarabunNewItalic';
+        src: url('./THSarabunNewItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+      }
+
+@font-face {
+    font-family: 'THSarabunNewRegular';
+        src: url('./THSarabunNew001.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+      }
+
+ /* The following rules are deprecated. */ 
+
+@font-face {
+    font-family: 'TH Sarabun New';
+        src: url('./THSarabunNewBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+      }
+
+
+
+@font-face {
+    font-family: 'TH Sarabun New';
+        src: url('/assets/fonts/thsarabun-new/946dac475cf5ab7efd797f2e021244e7/0b381613886ea1af245b0a8120019ecb/THSarabunNewBoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+      }
+
+
+
+@font-face {
+    font-family: 'TH Sarabun New';
+        src: url('/assets/fonts/thsarabun-new/946dac475cf5ab7efd797f2e021244e7/05a052030bb61432929f643579b82ce1/THSarabunNewItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+      }
+
+
+
+@font-face {
+    font-family: 'TH Sarabun New';
+        src: url('/assets/fonts/thsarabun-new/946dac475cf5ab7efd797f2e021244e7/45905ce12b4739c794a5ebdaee506202/THSarabunNewRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+      }
+

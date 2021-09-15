@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include ('./partials/head.ejs') %>
+<body>
+  <div class="wrapper">
+    <header>Todo App</header>
+    <form action="/todos" method="POST" class="inputField">
+        <input type="text" name="body" id="body" placeholder="Add your new todo" required>
+        <button><i class="fas fa-plus"></i></button>
+    </form>
+    <ul class="todoList">
+      <!-- data that comes from backend -->
+        <% if( todos.length > 0 ) { %>
+            <% todos.forEach(todo => { %>
+              <a class="single" href="/todos/<%= todo._id %>">
+              <li><%= todo.body %>  <i class="icon fas fa-trash delete" data-doc="<%= todo._id %>"></i></li>
+              </a>
+           <% }) %>
+       <% } else { %>
+        <p> There are no todos</p>
+      <% } %>
+    </ul>
+    <div class="footer">
+      <span>You have <span class="pendingTasks"><%= todos.length %></span> pending tasks</span>
+    </div>
+  </div>
+
+  <script>
+    const trash = document.querySelector('.delete');
+
+    trash.addEventListener('click', (e) => {
+      const endpoint = `/todos/${trash.dataset.doc}`;
+
+      fetch(endpoint, {
+        method: 'DELETE'
+      })
+        .then((response) => response.json())
+        .then((data) => console.log(data))
+        .catch(err => {
+          console.log(err);
+        });
+    })
+  </script>
+</body>
+</html>
